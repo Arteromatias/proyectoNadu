@@ -1,0 +1,145 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .menu a {
+  color: #e29762;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+header .menu a:hover {
+  color: #99631d;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+header h1 {
+  color: #e29762;
+  font-size: 84px;
+  text-decoration: underline;
+  font-family: "Special Elite", cursive;
+  margin-left: 3%;
+}
+
+main {
+  margin: 1.5rem;
+}
+
+main h2 {
+  color: #99631d;
+  -webkit-text-size-adjust: center;
+     -moz-text-size-adjust: center;
+      -ms-text-size-adjust: center;
+          text-size-adjust: center;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Special Elite", cursive;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 5%;
+}
+
+main p {
+  font-size: 25px;
+  font-family: "Allerta Stencil", sans-serif;
+  margin: 1%;
+}
+
+main .aparecer {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+footer {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
+footer .redes {
+  width: 10px;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .gradientes {
+  background: -webkit-gradient(linear, right top, left top, from(#bd27db), color-stop(#f36f6f), to(#58b6ec));
+  background: linear-gradient(to left, #bd27db, #f36f6f, #58b6ec);
+}
+
+footer .redes img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+header {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    .menu a {
+      color: #e29762;
+      text-decoration: none;
+      font-size: 2rem;
+      .menu a:hover {
+        color: #99631d;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  h1 {
+    color: #e29762;
+    font-size: 84px;
+    text-decoration: underline;
+    font-family: "Special Elite", cursive;
+    margin-left: 3%;
+  }
+}

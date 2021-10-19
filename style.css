@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./media/imagendefondo.jpeg);
+}
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+header img {
+  width: 100%;
+}
+header {
+  
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.video1 {
+  text-align: center;
+}
+
+header .menu a {
+  color: #e29762;
+  text-decoration: none;
+  font-size: 2rem;
+}
+header .menu a:hover {
+  color: #99631d;
+  font-weight: bold;
+  font-size: 2rem;
+}
+main {
+  margin: 1.5rem;
+}
+main img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+}
+
+main article img {
+  width: 270px;
+  height: 270px;
+  margin: 5px;
+}
+.aparecer {
+  animation-duration: 8s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+main section img {
+  width: 300px;
+  height: 300px;
+}
+main .servicios {
+  display: flex;
+  justify-content: space-evenly;
+}
+.scale:hover {
+  transform: scale(1.4, 1.4);
+}
+.encuadernaciones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+main video {
+  margin-top: 5%;
+}
+
+h1 {
+  color: #e29762;
+  font-size: 84px;
+  text-decoration: underline;
+  font-family: "Special Elite", cursive;
+  margin-left: 3%;
+}
+h2 {
+  color: #99631d;
+  text-size-adjust: center;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Special Elite", cursive;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 5%;
+}
+p {
+  font-size: 25px;
+  font-family: "Allerta Stencil", sans-serif;
+  margin: 1%;
+}
+footer .redes {
+  width: 10px;
+  height: 2rem;
+  display: flex;
+}
+footer {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+.gradientes {
+  background: linear-gradient(
+    to left,
+    rgb(189, 39, 219),
+    rgb(243, 111, 111),
+    rgb(88, 182, 236)
+  );
+  
+}
+
+footer .redes img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* GRID GRID GRID OBRAS */
+
+.contenedor {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 3, 1fr, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main";
+}
+.prueba {
+  grid-area: header;
+}
+.main_obras {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 3, 1fr, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas:
+    "texto imagenes imagenes"
+    "texto imagenes imagenes";
+}
+.main {
+  display: grid;
+  grid-template-columns: 3, 1fr, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas:
+    "texto imagenes imagenes"
+    "texto imagenes imagenes";
+}
+.prueba {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo  menu menu";
+}
+
+.logo {
+  grid-area: logo;
+  text-align: right;
+}
+.texto {
+  grid-area: texto;
+  text-align: left;
+}
+.imagenes {
+  grid-area: imagenes;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screem and (min-width: 576px) {
+  header li{
+    text-align: center;
+  }
+  
+}
+@media only screem and (min-width: 768px) {
+  body {
+    background-color: rgb(214, 106, 106);
+  }
+
+}
