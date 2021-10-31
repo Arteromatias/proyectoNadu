@@ -5,6 +5,9 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: url(../media/imagendefondo.jpeg);
+}
 
 header {
   -webkit-box-align: center;
@@ -29,13 +32,13 @@ header li {
   margin-right: 20px;
 }
 
-header .menu a {
+header li .menu a {
   color: #e29762;
   text-decoration: none;
   font-size: 2rem;
 }
 
-header .menu a:hover {
+header li .menu a .menu a:hover {
   color: #99631d;
   font-weight: bold;
   font-size: 2rem;
