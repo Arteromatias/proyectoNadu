@@ -1,4 +1,5 @@
-/node_modules/
-/boostrap/
-wow.min.js
-/js/
+node_modules/
+boostrap/
+*.wow.min.js
+js/
+*.json
