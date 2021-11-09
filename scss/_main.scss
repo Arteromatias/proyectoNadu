@@ -1,4 +1,13 @@
 main {
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+
 
     margin: 1.5rem;
     h2 {

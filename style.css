@@ -93,7 +93,7 @@ main .servicios {
 
 .fotos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: stretch;
   justify-content: space-around;
   align-items: flex-end;
