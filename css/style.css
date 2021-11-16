@@ -1,3 +1,7 @@
+body {
+  background-image: url(../media/imagendefondo.jpeg);
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -26,19 +30,19 @@ header {
       flex-wrap: wrap;
 }
 
-header li {
+header .menu li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
 }
 
-header li .menu a {
+header .menu li a {
   color: #e29762;
   text-decoration: none;
   font-size: 2rem;
 }
 
-header li .menu a .menu a:hover {
+header .menu li a:hover {
   color: #99631d;
   font-weight: bold;
   font-size: 2rem;
@@ -54,6 +58,23 @@ header h1 {
 
 main {
   margin: 1.5rem;
+}
+
+main .fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
 }
 
 main h2 {
@@ -141,6 +162,12 @@ footer .gradientes {
 }
 
 footer .redes img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer footer .redes img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
